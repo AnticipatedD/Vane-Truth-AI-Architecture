@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vane-Truth AI Architecture</title>
+    <base href="https://anticipatedd.github.io/VANE-SPACE-SLA/app-ads.txt">
+    <style>
+        :root {
+            --bg-main: #0b0f19;
+            --bg-card: #111827;
+            --bg-widget: #1f2937;
+            --accent-blue: #2563eb;
+            --accent-green: #059669;
+            --text-primary: #f3f4f6;
+            --text-secondary: #9ca3af;
+            --border-color: #1e293b;
+        }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            background-color: var(--bg-main); 
+            color: var(--text-primary); 
+            margin: 0; 
+            padding: 0; 
+            line-height: 1.5;
+        }
+        .header-inner { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 16px 20px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
+        .logo { 
+            font-family: monospace; 
+            font-size: 18px; 
+            font-weight: bold; 
+            color: #f3f4f6; 
+            text-decoration: none; 
+        }
+        .logo span { color: #3b82f6; }
+        .grid-container { 
+            display: grid; 
+            grid-template-columns: 1fr; 
+            gap: 20px; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 20px 16px;
+        }
+        .card { 
+            background-color: var(--bg-card); 
+            border: 1px solid var(--border-color); 
+            border-radius: 8px; 
+            padding: 20px; 
+        }
+        .card h2 { 
+            color: #3b82f6; 
+            margin-top: 0; 
+            font-size: 1.3rem; 
+        }
+        .highlight { color: #f43f5e; font-weight: bold; }
+        .telemetry-terminal { 
+            background: #05070c; 
+            border: 1px solid #1e293b; 
+            border-radius: 6px; 
+            padding: 15px; 
+            font-family: monospace; 
+            font-size: 0.8rem; 
+            color: #6ee7b7; 
+            height: 250px; 
+            overflow-y: auto; 
+        }
+        @media (min-width: 768px) { 
+            .grid-container { grid-template-columns: 1fr 1fr; } 
+            .span-desktop-2 { grid-column: span 2; } 
+        }
+    </style>
+    <!-- 💰 Google AdMob Publisher Configuration -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-app-pub-5005820095625003" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header-inner">
+        <a class="logo" href="#">Vane-Truth <span>AI</span></a>
+    </div>
+    <div class="grid-container">
+        <div class="card span-desktop-2">
+            <h1>Vane-Truth AI Architecture</h1>
+            <p>Locks LLMs to a <span class="highlight">0.0 temperature</span> and anchors all insights to the <strong>VANE_ROOT_STABLE_001</strong> source of truth. We provide 100% transparent evidence trails across Cloud, Networking, Application, and Hardware domains, transforming raw telemetry into high-fidelity "outputs of privilege" for global enterprise clients.</p>
+        </div>
+        <div class="card span-desktop-2">
+            <h2>Mobile SDK Client Implementation (Kotlin)</h2>
+            <pre class="telemetry-terminal"><code>import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.google.android.gms.ads.*
+import com.google.android.gms.ads.interstitial.InterstitialAd
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
+import com.google.android.gms.ads.rewarded.RewardedAd
+import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback
+
+class AdManagerActivity : AppCompatActivity() {
+    private var orchestratorInterstitial: InterstitialAd? = null
+    private var harigovInterstitial: InterstitialAd? = null
+    private var rewardedAd: RewardedAd? = null
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_ads)
+
+        MobileAds.initialize(this) {}
+        val request = AdRequest.Builder().build()
+
+        // 1. Firebase (Banner)
+        val firebaseBanner = AdView(this).apply {
+            adUnitId = "ca-app-pub-5005820095625003/5556401390"
+            setAdSize(AdSize.BANNER)
+        }
+        firebaseBanner.loadAd(request)
+
+        // 2. vane-enterprise.github.io (Banner)
+        val githubBanner = AdView(this).apply {
+            adUnitId = "ca-app-pub-5005820095625003/1872916061"
+            setAdSize(AdSize.BANNER)
+        }
+        githubBanner.loadAd(request)
+
+        // 3. Vane-guard-sovereign-orchestrator (Interstitial)
+        InterstitialAd.load(this, "ca-app-pub-5005820095625003/4307507716", request,
+            object : InterstitialAdLoadCallback() {
+                override fun onAdLoaded(ad: InterstitialAd) { orchestratorInterstitial = ad }
+            })
+
+        // 4. harigov63 (Interstitial)
+        InterstitialAd.load(this, "ca-app-pub-5005820095625003/9779551583", request,
+            object : InterstitialAdLoadCallback() {
+                override fun onAdLoaded(ad: InterstitialAd) { harigovInterstitial = ad }
+            })
+
+        // 5. HARIG5E8D4 (Rewarded)
+        RewardedAd.load(this, "ca-app-pub-5005820095625003/9832699505", request,
+            object : RewardedAdLoadCallback() {
+                override fun onAdLoaded(ad: RewardedAd) { rewardedAd = ad }
+            })
+    }
+}</code></pre>
+        </div>
+        <div class="card">
+            <h3>Ad inventory verification config</h3>
+            <p>Hosted securely at `app-ads.txt`. AdMob crawler state: <strong style="color:var(--accent-green)">Active & Verified</strong>.</p>
+        </div>
+    </div>
+</body>
+</html>
