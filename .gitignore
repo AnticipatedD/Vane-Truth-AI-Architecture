@@ -1,0 +1,11 @@
+# Target build directory
+/target/
+Cargo.lock
+**/*.rs.bk
+/tmp/
+
+# 🔒 SECURE CREDENTIALS - STRICTLY BLOCKED FROM SOURCE CONTROL
+test_features/service-account-key.json
+test_fixtures/service-account-key.json
+access_token.json
+.env
