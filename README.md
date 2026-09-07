@@ -22,3 +22,5 @@ Provide your Google service account credentials file:
 let scopes = vec!["https://www.googleapis.com/auth/firebase.messaging"];
 let mut sa = ServiceAccount::from_file("test_fixtures/service-account-key.json", scopes);
 let bearer_token = sa.access_token().await?;
+---
+Copyright © 2026 MD ABUL HOSSAIN. All rights reserved.
