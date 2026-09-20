@@ -1,0 +1,10 @@
+# Pinned dependency lockfile for reproducible installations
+flask==2.3.3
+sentry-sdk==1.32.0
+requests==2.31.0
+pydantic==2.4.2
+gunicorn==21.2.0
+python-dotenv==1.0.0
+responses==0.23.3
+vcrpy==5.1.0
+pip-audit==2.6.1
