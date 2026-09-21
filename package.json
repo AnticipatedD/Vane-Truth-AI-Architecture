@@ -68,7 +68,7 @@
     "@types/node": "^20.9.3",
     "jest": "^29.5.0",
     "jest-environment-jsdom": "^29.5.0",
-    "nodemon": "3.1.10",
+    "nodemon": "3.1.14",
     "pa11y-ci": "^4.0.1",
     "prettier": "2.8.8",
     "stylelint": "14.16.1",
