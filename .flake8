@@ -1,0 +1,15 @@
+[flake8]
+# Align with package.json script parameters and Python black formatter rules
+max-line-length = 79
+extend-ignore = E203
+
+# Exclude generated directories and standard virtual environment files from linting loops
+exclude =
+    .git,
+    __pycache__,
+    .next,
+    out,
+    build,
+    node_modules,
+    venv,
+    .venv
